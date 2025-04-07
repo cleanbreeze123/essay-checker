@@ -29,14 +29,14 @@ export default function EssayFeedbackApp() {
 
       <Card>
         <CardContent className="grid gap-2 p-4">
-          <label className="font-medium">📝 논술형 문항</label>
+          <label className="font-medium"> 논술형 문항</label>
           <Textarea value={prompt} onChange={(e) => setPrompt(e.target.value)} rows={3} />
         </CardContent>
       </Card>
 
       <Card>
         <CardContent className="grid gap-2 p-4">
-          <label className="font-medium">👩‍🎓 학생 답안</label>
+          <label className="font-medium"> 학생 답안</label>
           <Textarea
             placeholder="여기에 학생 답안을 입력하거나 붙여넣으세요."
             value={studentAnswer}
@@ -56,7 +56,7 @@ export default function EssayFeedbackApp() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <strong>📊 AI 피드백 결과:</strong>
+          <strong> AI 피드백 결과:</strong>
           <div className="mt-2">{feedback}</div>
         </motion.div>
       )}
